@@ -1,0 +1,16 @@
+<$publications>
+<$pubType=article?>
+(<$authors.firstName.stringByRemovingTeX.@componentsWithEtAlAfterOne/> <$fields.Year/>) <$fields.Title/>, <$fields.Journal/>, <$fields.Volume/><$fields.Number.parenthesizedStringIfNotEmpty/>: <$fields.Pages/>. doi=<$fields.Doi/>
+
+<?$pubType=inproceedings?>
+(<$authors.firstName.stringByRemovingTeX.@componentsWithEtAlAfterOne/> <$fields.Year/>) <$fields.Title/>, <$fields.Series/> <$fields.Year/>, pp.<$fields.Pages/>. doi=<$fields.Doi/>
+
+<?$pubType=incollection?>
+(<$authors.firstName.stringByRemovingTeX.@componentsWithEtAlAfterOne/> <$fields.Year/>) <$fields.Title/>, <$fields.Booktitle/>, pp.<$fields.Pages/>. doi=<$fields.Doi/>
+
+<?$pubType?>
+(<$authors.firstName.stringByRemovingTeX.@componentsWithEtAlAfterOne/> <$fields.Year/>) <$fields.Title/>,
+
+</$pubType?>
+</$publications>
+
